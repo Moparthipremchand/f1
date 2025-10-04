@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="revision.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="section1">
+      <p> this is main page </p>
+      <!-- <button class="btn btn-primary" onclick="display('section2')">
+        Go to Section 2
+      </button> -->
+      <button class="btn btn-primary" onclick="display('section2')">
+        Go to Section 2
+      </button>
+      <button class="btn btn-primary" onclick="display('section3')">
+        Go to Section 3
+      </button>
+    </div>
+    <div id="section2">
+        <div class="background_image">
+            <h1 class="main_heading"> tourist placess</h1>
+            <div class="places_decreption d-flex flex-row">
+                <div>
+                    <h1 class="f_place_heading">TAJ-MAHAL</h1>
+                    <p>The Taj Mahal, located in Agra, is a white marble mausoleum built by Mughal emperor Shah Jahan in memory of his wife, Mumtaz Mahal. It's renowned for its intricate architecture and considered a symbol of love. The Taj Mahal is also one of the Seven Wonders of the World and a UNESCO World Heritage Site. </p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm6BhzSSTHFUwd_URAQSUIWJDPJbEeCRlBpQ&s" class="faverouit-placeimg"/>
+            </div>
+             <div class="places_decreption d-flex flex-row">
+                <div>
+                    <h1 class="f_place_heading" >GOLDEN TEMPLE</h1>
+                    <p>The Golden Temple, or Harmandir Sahib, is a sacred Sikh pilgrimage site in Amritsar, Punjab, known for its stunning gold-covered dome and its spiritual significance for Sikhs. It was built around a sacred pool called the Amrit Sarovar and is a symbol of Sikh values like equality and service, with its famous community kitchen serving millions annually</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKsefsW9DsbzPFGyiOgwayhFXH2hV7pqHRKQ&s" class="faverouit-placeimg"/>
+            </div>
+             <div class="places_decreption d-flex flex-row">
+                <div>
+                    <h1 class="f_place_heading">KAASHI</h1>
+                    <p>Kashi, also known as Varanasi, is one of the oldest living cities in the world and a deeply sacred pilgrimage site for Hindus, believed to offer salvation and liberation from the cycle of rebirth. </p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMd9iyREk5YuWZ3cuHvGrtQwbp4NxiQEkEg&s" class="faverouit-placeimg"/>
+            </div>
+             <div class="places_decreption d-flex flex-row">
+                <div>
+                    <h1 class="f_place_heading">ARAKU VALLEY</h1>
+                    <p>Araku Valley is a beautiful hill station in Andhra Pradesh, India, known for its lush coffee plantations, tribal culture, and scenic landscapes. It offers a tranquil escape with attractions like the Borra Caves, Tribal Museum, and various waterfalls and gardens. The valley is nestled in the Eastern Ghats and boasts a moderate climate, making it a popular destination for tourists. </p>
+                </div>
+                <img src="data:image/jpeg;base64,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" class="faverouit-placeimg"/>
+            </div>    
+        </div>
+      <center>
+      <button class="btn btn-primary" onclick="display('section3')">
+        Go to Section 3
+      </button>
+      <button class="btn btn-dark" onclick="display('section1')">
+        back
+      </button>
+      </center>
+    </div>
+    <div id="section3">
+         <div class="bgimage">
+            <div class="heading">
+                <h1>detailed view</h1>
+            </div>
+            <center>
+                <div class="brd">
+                    <div>
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="./images/img2.jfif" class="d-block w-100" alt="..." style="height:400px; object-fit:cover;">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="./images/img3.jfif" class="d-block w-100" alt="..." style="height:400px; object-fit:cover;">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="./images/img4.jfif" class="d-block w-100" alt="..." style="height:400px; object-fit:cover;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        <div class="brd2">
+                        <h1 class="heading2">tajmahal</h1>
+                        <p>
+                            The Taj Mahal is a white marble mausoleum in Agra, India, 
+                            built by the Mughal emperor Shah Jahan for his wife Mumtaz 
+                            Mahal and is considered a symbol of eternal love
+                        </p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0NSq1-Ne26Y?rel=0"   allowfullscreen></iframe>
+                        </div>
+                        </div> 
+                        
+                </div>
+            </div>
+            </center>
+        </div>
+      <center>
+      <button class="btn btn-primary" onclick="display('section2')">
+        Go to Section 2
+      </button>
+      <button class="btn btn-dark" onclick="display('section1')">
+        back
+      </button>
+      </center>
+    </div>
+    <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+  </body>
+</html>
